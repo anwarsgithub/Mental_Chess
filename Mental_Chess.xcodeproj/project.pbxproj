@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		659D6EFB077E66D65500F1CC /* Pods_Mental_Chess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C02A393640AA3391039CDD5 /* Pods_Mental_Chess.framework */; };
 		9727957B230F4AD0007E1F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727957A230F4AD0007E1F09 /* AppDelegate.swift */; };
 		9727957D230F4AD0007E1F09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727957C230F4AD0007E1F09 /* ViewController.swift */; };
 		97279580230F4AD0007E1F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9727957E230F4AD0007E1F09 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C02A393640AA3391039CDD5 /* Pods_Mental_Chess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mental_Chess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		233DEA77FA3005EB3DF84F23 /* Pods-Mental_Chess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mental_Chess.debug.xcconfig"; path = "Target Support Files/Pods-Mental_Chess/Pods-Mental_Chess.debug.xcconfig"; sourceTree = "<group>"; };
 		97279577230F4AD0007E1F09 /* Mental_Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mental_Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9727957A230F4AD0007E1F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9727957C230F4AD0007E1F09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		97279581230F4AD2007E1F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97279584230F4AD2007E1F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97279586230F4AD2007E1F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2214FC1364302D3C41EE52B /* Pods-Mental_Chess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mental_Chess.release.xcconfig"; path = "Target Support Files/Pods-Mental_Chess/Pods-Mental_Chess.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659D6EFB077E66D65500F1CC /* Pods_Mental_Chess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F024543746E22537BEDC877 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				233DEA77FA3005EB3DF84F23 /* Pods-Mental_Chess.debug.xcconfig */,
+				C2214FC1364302D3C41EE52B /* Pods-Mental_Chess.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		79876760F6E68565A3100EC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C02A393640AA3391039CDD5 /* Pods_Mental_Chess.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9727956E230F4AD0007E1F09 = {
 			isa = PBXGroup;
 			children = (
 				97279579230F4AD0007E1F09 /* Mental_Chess */,
 				97279578230F4AD0007E1F09 /* Products */,
+				0F024543746E22537BEDC877 /* Pods */,
+				79876760F6E68565A3100EC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +80,37 @@
 			isa = PBXGroup;
 			children = (
 				9727957A230F4AD0007E1F09 /* AppDelegate.swift */,
-				9727957C230F4AD0007E1F09 /* ViewController.swift */,
-				9727957E230F4AD0007E1F09 /* Main.storyboard */,
-				97279581230F4AD2007E1F09 /* Assets.xcassets */,
-				97279583230F4AD2007E1F09 /* LaunchScreen.storyboard */,
+				9727958C230F4B51007E1F09 /* Controllers */,
+				9727958E230F4B9A007E1F09 /* Supporting Files */,
+				9727958D230F4B7A007E1F09 /* Views */,
 				97279586230F4AD2007E1F09 /* Info.plist */,
 			);
 			path = Mental_Chess;
+			sourceTree = "<group>";
+		};
+		9727958C230F4B51007E1F09 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9727957C230F4AD0007E1F09 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9727958D230F4B7A007E1F09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9727957E230F4AD0007E1F09 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9727958E230F4B9A007E1F09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97279583230F4AD2007E1F09 /* LaunchScreen.storyboard */,
+				97279581230F4AD2007E1F09 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97279589230F4AD2007E1F09 /* Build configuration list for PBXNativeTarget "Mental_Chess" */;
 			buildPhases = (
+				E547B4473EEE24DB3FE65293 /* [CP] Check Pods Manifest.lock */,
 				97279573230F4AD0007E1F09 /* Sources */,
 				97279574230F4AD0007E1F09 /* Frameworks */,
 				97279575230F4AD0007E1F09 /* Resources */,
+				CF52762544421DF3E147E214 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +180,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF52762544421DF3E147E214 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mental_Chess/Pods-Mental_Chess-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mental_Chess/Pods-Mental_Chess-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mental_Chess/Pods-Mental_Chess-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E547B4473EEE24DB3FE65293 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mental_Chess-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		97279573230F4AD0007E1F09 /* Sources */ = {
@@ -280,6 +373,7 @@
 		};
 		9727958A230F4AD2007E1F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233DEA77FA3005EB3DF84F23 /* Pods-Mental_Chess.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +392,7 @@
 		};
 		9727958B230F4AD2007E1F09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2214FC1364302D3C41EE52B /* Pods-Mental_Chess.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
