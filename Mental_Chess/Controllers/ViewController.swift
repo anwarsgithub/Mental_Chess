@@ -16,10 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var MoveLabel: UILabel!
     
 
-    
-    
- 
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         
